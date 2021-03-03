@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>wannabe-js</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+     
+    <!-- 
+      REPO: js-pwdgen-wannabe
+      GOAL: chiedere all'utente nome, cognome e colore preferito e stampare nell'h1 in pagina una stringa cosi' composta:
+      nomecognomecolore19
+      prendendo i dati da quelli forniti dall'utente 
+    -->
+
+    <div class="container">
+      <div class="row">
+        <h1 id="favoriteColor"></h1>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var name = prompt('Nome');
+      var surname = prompt('Cognome');
+      var color = prompt("Qual'è il tuo colore preferito?");
+      console.log(name, surname, color);
+
+      document.getElementById('favoriteColor').innerHTML = name+surname+color+19;
+    </script>
+  </body>
+</html>
